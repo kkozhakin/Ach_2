@@ -1,4 +1,4 @@
-# DCS lab
+# Ach_2
 
 Distributed computing systems lab 1
 
