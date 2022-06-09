@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My db lab</title>
+<style>
+input {
+    width: 20%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+}
+button {
+    background-color: #04AA6D;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 6px 18px;
+    margin-top: 30px;
+}
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}
+</style>
+</head>
+<body>
+<center>
+    <h2>Input number here</h2>
+
+    <form method="post" action="http://{{url_back}}">
+        <input type="number" name="number" placeholder="Enter number">
+        <br>
+        <button>Submit!</button>
+        <br>
+        <h3 class="error">{{error}}</h3>
+        <h3 class="success">{{success}}</h3>
+    </form>
+</center>
+</body>
+</html>
